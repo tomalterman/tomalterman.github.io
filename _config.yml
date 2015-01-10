@@ -3,7 +3,7 @@
 title: tomalterman
 description: Portfolio website for Tom Alterman- UX Designer / Product Manager / Front end developer
 tagline: Portfolio website for Tom Alterman- UX Designer / Product Manager / Front end developer
-url: localhost:4000
+url: tomalterman.github.io
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -15,7 +15,7 @@ author:
   name: Tom Alterman
   email: hello@tomalterman.com
   bio: London based UX designer & web developer. Currently UX & Front-End Lead at TrialReach as well as a UX Design instructor at General Assembly.
-  twitter: https://twitter.com/tomalterman
+  twitter: tomalterman
 
 # general setting for Jekyll
 googleAnalytics: UA-XXXXX-X

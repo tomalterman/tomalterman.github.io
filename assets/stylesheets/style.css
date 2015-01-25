@@ -113,7 +113,7 @@ img {
   padding: 0.8rem 1rem; }
   .nav .logo {
     float: left;
-    color: #000000;
+    color: #222222;
     text-decoration: none;
     padding: 8px 0;
     padding: 0.4rem 0; }
@@ -202,8 +202,8 @@ img {
 
 body {
   font-size: 100%;
-  color: #000000;
-  background-color: #FFFFFF;
+  color: #222222;
+  background-color: #fdfdfd;
   line-height: 1.5;
   font-family: 'Trykker', serif;
   -webkit-font-smoothing: antialiased; }
@@ -271,7 +271,7 @@ a {
 .header-skills {
   padding-bottom: 20px;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #000000; }
+  border-bottom: 1px solid #222222; }
 
 .u-margin--none {
   margin-bottom: 0; }
@@ -313,17 +313,17 @@ a {
   padding: 0.4rem;
   display: block;
   text-decoration: none;
-  color: #000000; }
+  color: #222222; }
   @media (min-width:768px) {
     .button, .button--sidebar, .button--next, .button--previous, .button--home {
       padding: 8px 20px;
       padding: 0.4rem 1rem; } }
   .button:hover, .button--sidebar:hover, .button--next:hover, .button--previous:hover, .button--home:hover, .button:focus, .button--sidebar:focus, .button--next:focus, .button--previous:focus, .button--home:focus, .button:active, .button--sidebar:active, .button--next:active, .button--previous:active, .button--home:active {
-    background-color: #000000;
+    background-color: #222222;
     color: #FFFFFF; }
 
 .button--active {
-  background-color: #000000;
+  background-color: #222222;
   color: #FFFFFF;
   opacity: 0.7; }
 
@@ -361,7 +361,7 @@ a {
   font-size: 2rem;
   margin-bottom: 40px; }
   .button--home:hover, .button--home:focus, .button--home:active {
-    color: #000000; }
+    color: #222222; }
 
 .button--salmon {
   border-color: #FFC2A4;
@@ -392,7 +392,7 @@ a {
   max-width: 10em;
   margin: 0 auto; }
   .contacts a {
-    color: #000000; }
+    color: #222222; }
 
 .contacts--list {
   width: 100%;

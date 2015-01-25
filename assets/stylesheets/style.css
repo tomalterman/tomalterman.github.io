@@ -15,6 +15,17 @@
   margin-bottom: 20px;
   margin-bottom: 1rem; }
 
+.u-gapTop {
+  margin-top: 20px;
+  margin-top: 1rem; }
+
+.u-hidden {
+  display: none; }
+
+@media (min-width:1024px) {
+  .u-lg--block {
+    display: block; } }
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -108,22 +119,30 @@ img {
   min-height: 300px; }
 
 .nav {
-  width: 100%;
-  padding: 16px 20px;
-  padding: 0.8rem 1rem; }
+  width: 100%; }
   .nav .logo {
     float: left;
     color: #222222;
     text-decoration: none;
-    padding: 8px 0;
-    padding: 0.4rem 0; }
+    padding: 8px;
+    padding: 0.4rem;
+    margin: 16px 20px;
+    margin: 0.8rem 1rem; }
   .nav .button, .nav .button--sidebar, .nav .button--next, .nav .button--previous, .nav .button--home {
     display: inline-block;
     border-width: 0; }
     .nav .button.isActive, .nav .isActive.button--sidebar, .nav .isActive.button--next, .nav .isActive.button--previous, .nav .isActive.button--home {
       border-bottom-width: 1px; }
   .nav > ul {
-    float: right; }
+    float: right;
+    padding: 16px 20px;
+    padding: 0.8rem 1rem; }
+    @media (min-width:1024px) {
+      .nav > ul {
+        width: calc(100% - 24em);
+        text-align: right;
+        background-color: #fdfdfd;
+        background: linear-gradient(to bottom, #ffffff 1%, #ffffff 90%, rgba(255, 255, 255, 0) 100%); } }
 
 .pane--nav {
   position: absolute;
@@ -200,27 +219,37 @@ img {
   padding-right: 64px;
   padding-right: 3.2rem; }
 
+html {
+  font-size: 16px; }
+  @media (min-width:768px) {
+    html {
+      font-size: 20px; } }
+
 body {
-  font-size: 100%;
   color: #222222;
   background-color: #fdfdfd;
   line-height: 1.5;
   font-family: 'Trykker', serif;
   -webkit-font-smoothing: antialiased; }
-  @media (min-width:768px) {
-    body {
-      font-size: 120%; } }
 
 h1, h2 {
   font-family: 'Gotham Pro Bold', sans-serif; }
 
 h1 {
-  font-size: 80px;
-  font-size: 4rem; }
+  font-size: 64px;
+  font-size: 3.2rem; }
 
 h2 {
-  font-size: 56px;
-  font-size: 2.8rem; }
+  font-size: 44px;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: -1px; }
+
+h3 {
+  font-size: 28px;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  margin-bottom: 0.4rem; }
 
 .fa span {
   border: 0 !important;
@@ -252,6 +281,9 @@ a {
   margin-left: 2rem;
   margin-bottom: 20px;
   margin-bottom: 1rem; }
+  .ul > li {
+    margin-bottom: 8px;
+    margin-bottom: 0.4rem; }
 
 .header--name {
   text-transform: uppercase;
@@ -260,18 +292,40 @@ a {
   display: inline-block;
   font-family: 'Gotham Pro Bold', sans-serif; }
 
-.header--home h1 {
-  font-size: 44px; }
-.header--home p {
-  font-family: 'Gotham Pro Bold', sans-serif;
-  letter-spacing: 1px;
-  font-style: italic;
-  font-size: 17px; }
+.header--home {
+  margin-bottom: 40px;
+  margin-bottom: 2rem; }
+  .header--home h1 {
+    font-size: 44px; }
+  .header--home p {
+    font-family: 'Gotham Pro Bold', sans-serif;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 17px; }
+
+.headerImg {
+  position: relative; }
+
+.headerImg-h {
+  position: absolute;
+  bottom: 20px;
+  left: 64px;
+  left: 3.2rem;
+  z-index: 2; }
+
+.headerImg-img {
+  opacity: 0.2;
+  z-index: 1; }
 
 .header-skills {
   padding-bottom: 20px;
   padding-bottom: 1rem;
+  color: #9BA1A3;
   border-bottom: 1px solid #222222; }
+  .header-skills > li:before {
+    content: '/'; }
+  .header-skills > li:first-child:before {
+    content: none; }
 
 .u-margin--none {
   margin-bottom: 0; }
@@ -299,7 +353,7 @@ a {
   .buttonGroup > li {
     margin-bottom: 10px;
     margin-bottom: 0.5rem; }
-    @media (min-width:768px) {
+    @media (min-width:1024px) {
       .buttonGroup > li {
         display: inline-block; } }
     @media (min-width:1024px) {
@@ -338,8 +392,8 @@ a {
     position: absolute;
     right: 10px;
     right: 0.5rem;
-    top: -4px;
-    top: -0.2rem;
+    top: -8px;
+    top: -0.4rem;
     font-size: 40px;
     font-size: 2rem; }
 
@@ -385,10 +439,14 @@ a {
   max-width: 38em;
   padding: 0 64px;
   padding: 0 3.2rem; }
+  @media (min-width:1024px) {
+    .sideContent .buttonGroup, .contacts--list .buttonGroup {
+      margin-top: 44px;
+      margin-top: 2.2rem; } }
 
 .contacts {
-  font-size: 44px;
-  font-size: 2.2rem;
+  font-size: 28px;
+  font-size: 1.4rem;
   max-width: 10em;
   margin: 0 auto; }
   .contacts a {
@@ -430,6 +488,11 @@ a {
     margin-top: 0.4rem;
     margin-bottom: 20px;
     margin-bottom: 1rem; }
+  .deliverable .gif {
+    margin-top: 8px;
+    margin-top: 0.4rem;
+    margin-bottom: 20px;
+    margin-bottom: 1rem; }
   .deliverable figcaption {
     font-size: 16px;
     font-size: 0.8rem;
@@ -438,9 +501,17 @@ a {
 @media (min-width:1024px) {
   .home .pane--one, .home .pane--two {
     width: 50%; } }
+.home .pane-inner, .home .pane-inner--main {
+  padding-top: 40px;
+  padding-top: 2rem; }
+  @media (min-width:1024px) {
+    .home .pane-inner, .home .pane-inner--main {
+      padding-top: 0; } }
 
 .about .pane--one {
   background-color: #FFC2A4; }
+.about .pane-inner--main {
+  padding-top: 0; }
 
 .talks .pane--one {
   background-color: #FFD2A4; }

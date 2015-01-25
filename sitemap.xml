@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>tomalterman.github.io/</loc>
+    <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+    <url>
+      <loc>tomalterman.github.io/jekyll/welcome-to-jekyll.html</loc>
+      
+        <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+    <url>
+      <loc>tomalterman.github.io/jekyll/poole/introducing-poole.html</loc>
+      
+        <lastmod>2014-03-02T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+  
+  
+  <url>
+    <loc>tomalterman.github.io/404.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/about-ux.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/about.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/atom.xml</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/index.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/sitemap.xml</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/talks-dnb.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/talks-lws.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/talks-utw.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/work-bnt.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/work-tr.html</loc>
+    
+      <lastmod>2015-01-25T11:09:46+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+</urlset>

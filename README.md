@@ -1,3 +1,0 @@
-# tomalterman
-
-[Describe the project.]

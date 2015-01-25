@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gotham Pro Bold'), url('/assets/fonts/GothaProBol.woff') format('woff'); }
+
 .align--center {
   text-align: center; }
 
@@ -206,7 +212,7 @@ body {
       font-size: 120%; } }
 
 h1, h2 {
-  font-family: 'Voltaire', sans-serif; }
+  font-family: 'Gotham Pro Bold', sans-serif; }
 
 h1 {
   font-size: 80px;
@@ -252,12 +258,12 @@ a {
   font-weight: 700;
   border-bottom: 1px solid black;
   display: inline-block;
-  font-family: 'Voltaire', sans-serif; }
+  font-family: 'Gotham Pro Bold', sans-serif; }
 
 .header--home h1 {
   font-size: 44px; }
 .header--home p {
-  font-family: 'Voltaire', sans-serif;
+  font-family: 'Gotham Pro Bold', sans-serif;
   letter-spacing: 1px;
   font-style: italic;
   font-size: 17px; }
@@ -301,7 +307,7 @@ a {
         display: block; } }
 
 .button, .button--sidebar, .button--next, .button--previous, .button--home {
-  font-family: 'Voltaire', sans-serif;
+  font-family: 'Gotham Pro Bold', sans-serif;
   border: 2px solid black;
   padding: 8px;
   padding: 0.4rem;
@@ -410,6 +416,24 @@ a {
 
 .img {
   width: 100%; }
+
+.img--border, .deliverable .img {
+  box-shadow: 1px 0px 6px rgba(1, 20, 60, 0.4); }
+
+.deliverable {
+  max-width: 40em;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-bottom: 1rem; }
+  .deliverable .img {
+    margin-top: 8px;
+    margin-top: 0.4rem;
+    margin-bottom: 20px;
+    margin-bottom: 1rem; }
+  .deliverable figcaption {
+    font-size: 16px;
+    font-size: 0.8rem;
+    font-style: italic; }
 
 @media (min-width:1024px) {
   .home .pane--one, .home .pane--two {

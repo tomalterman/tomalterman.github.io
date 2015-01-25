@@ -26,6 +26,9 @@
   .u-lg--block {
     display: block; } }
 
+.u-margin--none {
+  margin-bottom: 0; }
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -127,16 +130,23 @@ img {
     padding: 8px;
     padding: 0.4rem;
     margin: 16px 20px;
-    margin: 0.8rem 1rem; }
+    margin: 0.8rem 1rem;
+    margin-right: 0; }
   .nav .button, .nav .button--sidebar, .nav .button--next, .nav .button--previous, .nav .button--home {
     display: inline-block;
     border-width: 0; }
-    .nav .button.isActive, .nav .isActive.button--sidebar, .nav .isActive.button--next, .nav .isActive.button--previous, .nav .isActive.button--home {
-      border-bottom-width: 1px; }
+  .nav .isActive {
+    display: none; }
+    @media (min-width:498px) {
+      .nav .isActive {
+        display: inline-block; }
+        .nav .isActive .button, .nav .isActive .button--sidebar, .nav .isActive .button--next, .nav .isActive .button--previous, .nav .isActive .button--home {
+          border-bottom-width: 1px; } }
   .nav > ul {
     float: right;
     padding: 16px 20px;
-    padding: 0.8rem 1rem; }
+    padding: 0.8rem 1rem;
+    padding-left: 0; }
     @media (min-width:1024px) {
       .nav > ul {
         width: calc(100% - 24em);
@@ -218,6 +228,15 @@ img {
   padding-left: 3.2rem;
   padding-right: 64px;
   padding-right: 3.2rem; }
+
+.sideContent, .contacts--list {
+  max-width: 38em;
+  padding: 0 64px;
+  padding: 0 3.2rem; }
+  @media (min-width:1024px) {
+    .sideContent .buttonGroup, .contacts--list .buttonGroup {
+      margin-top: 44px;
+      margin-top: 2.2rem; } }
 
 html {
   font-size: 16px; }
@@ -336,9 +355,6 @@ a {
   .header-skills > li:first-child:before {
     content: none; }
 
-.u-margin--none {
-  margin-bottom: 0; }
-
 .buttonGroup--home {
   list-style: none;
   width: 100%;
@@ -443,15 +459,6 @@ a {
   background-color: #9BF1D3; }
   .button--greeny:hover, .button--greeny:focus, .button--greeny:active {
     background-color: #9BF1D3; }
-
-.sideContent, .contacts--list {
-  max-width: 38em;
-  padding: 0 64px;
-  padding: 0 3.2rem; }
-  @media (min-width:1024px) {
-    .sideContent .buttonGroup, .contacts--list .buttonGroup {
-      margin-top: 44px;
-      margin-top: 2.2rem; } }
 
 .contacts {
   font-size: 28px;

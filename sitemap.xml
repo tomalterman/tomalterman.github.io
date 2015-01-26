@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>localhost:4000/</loc>
-    <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+    <loc>tomalterman.github.io/</loc>
+    <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
     <url>
-      <loc>localhost:4000/jekyll/welcome-to-jekyll.html</loc>
+      <loc>tomalterman.github.io/jekyll/welcome-to-jekyll.html</loc>
       
         <lastmod>2014-03-03T00:00:00+00:00</lastmod>
       
@@ -21,7 +21,7 @@
     </url>
   
     <url>
-      <loc>localhost:4000/jekyll/poole/introducing-poole.html</loc>
+      <loc>tomalterman.github.io/jekyll/poole/introducing-poole.html</loc>
       
         <lastmod>2014-03-02T00:00:00+00:00</lastmod>
       
@@ -33,24 +33,11 @@
       
     </url>
   
-    <url>
-      <loc>localhost:4000/jekyll/example/2014-03-01-example-content.html</loc>
-      
-        <lastmod>2014-03-01T00:00:00+00:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
   
   <url>
-    <loc>localhost:4000/404.html</loc>
+    <loc>tomalterman.github.io/404.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -61,22 +48,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/pages/about-fe.html</loc>
+    <loc>tomalterman.github.io/pages/about-fe.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/pages/about-product.html</loc>
-    
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -87,22 +61,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/pages/about-ux.html</loc>
+    <loc>tomalterman.github.io/pages/about-product.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/about.html</loc>
-    
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -113,22 +74,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/atom.xml</loc>
+    <loc>tomalterman.github.io/pages/about-ux.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/contact.html</loc>
-    
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -139,22 +87,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/index.html</loc>
+    <loc>tomalterman.github.io/about.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/sitemap.xml</loc>
-    
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -165,22 +100,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/pages/talks-dnb.html</loc>
+    <loc>tomalterman.github.io/atom.xml</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/pages/talks-lws.html</loc>
-    
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -191,22 +113,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/pages/talks-utw.html</loc>
+    <loc>tomalterman.github.io/contact.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>localhost:4000/pages/work-bnt.html</loc>
-    
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -217,9 +126,9 @@
   </url>
   
   <url>
-    <loc>localhost:4000/pages/work-gov.html</loc>
+    <loc>tomalterman.github.io/index.html</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -230,9 +139,87 @@
   </url>
   
   <url>
-    <loc>localhost:4000/pages/work-tr.html</loc>
+    <loc>tomalterman.github.io/sitemap.xml</loc>
     
-      <lastmod>2015-01-26T00:07:21+00:00</lastmod>
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/talks-dnb.html</loc>
+    
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/talks-lws.html</loc>
+    
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/talks-utw.html</loc>
+    
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/work-bnt.html</loc>
+    
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/work-gov.html</loc>
+    
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
+    
+    
+      <changefreq>monthly</changefreq>
+    
+    
+      <priority>0.3</priority>
+    
+  </url>
+  
+  <url>
+    <loc>tomalterman.github.io/pages/work-tr.html</loc>
+    
+      <lastmod>2015-01-26T00:12:05+00:00</lastmod>
     
     
       <changefreq>monthly</changefreq>

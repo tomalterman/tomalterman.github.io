@@ -122,7 +122,13 @@ img {
   min-height: 300px; }
 
 .nav {
-  width: 100%; }
+  width: 100%;
+  font-size: 13px;
+  font-size: 0.65rem; }
+  @media (min-width:498px) {
+    .nav {
+      font-size: 20px;
+      font-size: 1rem; } }
   .nav .logo {
     float: left;
     color: #222222;

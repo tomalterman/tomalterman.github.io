@@ -450,22 +450,22 @@ a {
     color: #222222; }
 
 .button--salmon {
-  border-color: rgba(255, 159, 97, 0.5);
-  background-color: rgba(255, 159, 97, 0.5); }
+  border-color: rgba(255, 144, 97, 0.4);
+  background-color: rgba(255, 144, 97, 0.4); }
   .button--salmon:hover, .button--salmon:focus, .button--salmon:active {
-    background-color: rgba(255, 159, 97, 0.5); }
+    background-color: rgba(255, 144, 97, 0.4); }
 
 .button--tan {
-  border-color: rgba(255, 242, 164, 0.8);
-  background-color: rgba(255, 242, 164, 0.8); }
+  border-color: rgba(255, 210, 164, 0.6);
+  background-color: rgba(255, 210, 164, 0.6); }
   .button--tan:hover, .button--tan:focus, .button--tan:active {
-    background-color: rgba(255, 242, 164, 0.8); }
+    background-color: rgba(255, 210, 164, 0.6); }
 
 .button--greeny {
-  border-color: rgba(155, 241, 211, 0.6);
-  background-color: rgba(155, 241, 211, 0.6); }
+  border-color: rgba(155, 241, 211, 0.7);
+  background-color: rgba(155, 241, 211, 0.7); }
   .button--greeny:hover, .button--greeny:focus, .button--greeny:active {
-    background-color: rgba(155, 241, 211, 0.6); }
+    background-color: rgba(155, 241, 211, 0.7); }
 
 .contacts {
   font-size: 28px;
@@ -532,15 +532,15 @@ a {
       padding-top: 0; } }
 
 .about .pane--one {
-  background-color: rgba(255, 159, 97, 0.5); }
+  background-color: rgba(255, 144, 97, 0.4); }
 .about .pane-inner--main {
   padding-top: 0; }
 
 .talks .pane--one {
-  background-color: rgba(255, 242, 164, 0.8); }
+  background-color: rgba(255, 210, 164, 0.6); }
 
 .work .pane--one {
-  background-color: rgba(155, 241, 211, 0.6); }
+  background-color: rgba(155, 241, 211, 0.7); }
 
 .headerImg-img--ux {
   background-image: url("/assets/images/ux.png");

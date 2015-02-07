@@ -1,0 +1,53 @@
+.callToActionWrap{
+  margin-top: 60px;
+}
+
+
+.bannerHeading {
+  font-size: 8rem;
+  line-height: 90px;
+  margin-top: 66px;
+  max-width: 80%;
+}
+
+body {
+  min-width: 1220px;
+  overflow-y: auto;
+}
+
+.bannerTagline {
+  padding-bottom: 30px;
+}
+
+.productOverviewHeading {
+  max-width: 100%;
+}
+
+@media all and (min-width: 46.25em) {
+  #homepageBanner {
+    height: 70em;
+  }
+}
+
+@media all and (min-width: 1510px) {
+  #homepageBanner {
+    height: 88rem;
+  }
+}
+
+.pressQuote {
+  font-size: 25px !important;
+  min-height: 117px;
+}
+
+.hack-cta{
+  margin-top: 55px;
+}
+
+.hack-quote{
+  width: 33%;
+}
+
+.reviewer img{
+  margin-top: 0 !important;
+}

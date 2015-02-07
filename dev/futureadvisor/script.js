@@ -1,26 +1,36 @@
 $( document ).ready(function() {
   var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["2012", "2013", "2014", "2015"],
     datasets: [
   {
     label: "My First dataset",
-    fillColor: "rgba(220,220,220,0.2)",
-    strokeColor: "rgba(220,220,220,1)",
-    pointColor: "rgba(220,220,220,1)",
+    fillColor: "rgba(255, 142, 64,0.2)",
+    strokeColor: "rgba(255, 142, 64,1)",
+    pointColor: "rgba(255, 142, 64,1)",
     pointStrokeColor: "#fff",
     pointHighlightFill: "#fff",
     pointHighlightStroke: "rgba(220,220,220,1)",
-    data: [0, 2, 3, 4, 5, 8]
+    data: [50000, 53050, 56428.05, 63160.72]
   },
 {
   label: "My Second dataset",
+  fillColor: "rgba(220,220,220,0.2)",
+  strokeColor: "rgba(220,220,220,1)",
+  pointColor: "rgba(220,220,220,1)",
+  pointStrokeColor: "#fff",
+  pointHighlightFill: "#fff",
+  pointHighlightStroke: "rgba(151,187,205,1)",
+  data: [50000, 52950, 55428.25, 60160.53]
+},
+{
+  label: "My third dataset",
   fillColor: "rgba(151,187,205,0.2)",
   strokeColor: "rgba(151,187,205,1)",
   pointColor: "rgba(151,187,205,1)",
   pointStrokeColor: "#fff",
   pointHighlightFill: "#fff",
   pointHighlightStroke: "rgba(151,187,205,1)",
-  data: [0, 1, 2, 3, 4, 5]
+  data: [50000, 51250, 52531.25, 53844.53]
 }
 ]
 };
@@ -30,7 +40,7 @@ $( document ).ready(function() {
     scaleShowHorizontalLines: false,
     scaleShowVerticalLines: false,
     showScale: false,
-    showTooltips: false
+    datasetFill : false
   };
 
   //Get the context of the canvas element we want to select

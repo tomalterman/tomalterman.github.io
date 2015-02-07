@@ -49,4 +49,19 @@ $( document ).ready(function() {
   var ctx = document.getElementById("myChart").getContext("2d");
   /*************************************************************************/
   myNewChart = new Chart(ct).Line(data, options);
+
+  function checkWidth(){
+    var windowsize = $(window).width();
+    if(windowsize < 1199) {
+      $('#warning').fadeIn('fast');
+    } else {
+      $('#warning').hide();
+    }
+  }
+
+  checkWidth();
+
+  $(window).resize(function() {
+    checkWidth();
+  });
 });

@@ -262,3 +262,17 @@ p, span{
   background-color: #8398a3;
   color: white;
 }
+
+.warning{
+  position: fixed;
+  top:0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  z-index: 10000;
+  font-size: 36px;
+  line-height: 6rem;
+  display: none;
+}

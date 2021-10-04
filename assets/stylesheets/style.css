@@ -560,9 +560,11 @@ a {
 .textLarge {
     font-size: 1.4rem;
     padding: 0 4rem;
+    max-width: 53rem;
 }
 .textLarge ul {
   margin-bottom: 0.5rem;
+  padding-left: 2rem;
 }
 .textLarge li {
   margin-bottom: 0.5rem;

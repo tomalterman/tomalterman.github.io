@@ -556,3 +556,8 @@ a {
 .headerImg-img--product {
   background-image: url("/assets/images/product.png");
   opacity: 0.4; }
+
+.textLarge {
+    font-size: 1.4rem;
+    padding: 0 4rem;
+}

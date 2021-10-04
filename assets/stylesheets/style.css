@@ -561,3 +561,9 @@ a {
     font-size: 1.4rem;
     padding: 0 4rem;
 }
+.textLarge ul {
+  margin-bottom: 0.5rem;
+}
+.textLarge li {
+  margin-bottom: 0.5rem;
+}

@@ -1,94 +1,445 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en-us">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Alterman - Product leader, advisor, speaker and coach</title>
+    <link rel="author" href="humans.txt" type="text/plain">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #000080;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ffffff;
+            font-weight: normal;
+        }
 
-  <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
+        .window {
+            background: #0000aa;
+            border: none;
+            border-radius: 0;
+            width: 600px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
 
-  <title>
-    
-   Tom Alterman, Product leader &middot; tomalterman
-    
-  </title>
+        .title-bar {
+            background: #aaaaaa;
+            color: #0000aa;
+            padding: 8px 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-  <!-- CSS -->
-  <!-- build:css /assets/stylesheets/style.min.css -->
-  <link rel="stylesheet" href="/assets/stylesheets/style.css">
-  <!-- endbuild -->
-  <link href='https://fonts.googleapis.com/css?family=Trykker' rel='stylesheet' type='text/css'>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        .window-controls {
+            display: flex;
+            gap: 6px;
+            margin-right: 12px;
+        }
 
-  <!-- JS -->
-  <!-- build:js /assets/javascript/all.min.js -->
-  <!-- endbuild -->
+        .window-button {
+            display: none;
+        }
 
-  <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/touch/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
-</head>
+        .window-body {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
 
+        .content {
+            text-align: left;
+        }
 
-  <body>
-    <div class="outer ">
-      <div class="inner home">
+        h1 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 30px;
+            color: #d4d4d4;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .menu-item {
+            margin: 10px 0;
+            padding: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            transition: all 0.15s ease;
+            font-size: 14px;
+        }
+
+        .menu-item::before {
+            content: "> ";
+            color: #ffffff;
+            opacity: 1;
+            transition: opacity 0.15s ease;
+        }
+
+        .menu-item:hover {
+            color: #ffffff;
+            background: #00005a;
+            padding-left: 16px;
+        }
+
+        .menu-item:hover::before {
+            opacity: 1;
+        }
+
+        .menu-item:active {
+            background: #000040;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #ffffff;
+            border-top: 1px solid #404040;
+            padding-top: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #00ff00;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            stroke: #ffffff;
+        }
+
+        .social-link:hover .social-icon {
+            filter: invert(1);
+            transition: filter 0.15s ease;
+        }
+
+        .social-link:active .social-icon {
+            filter: invert(0.8);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: #ffffff;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        .typing {
+            white-space: pre-wrap;
+            overflow: hidden;
+            border-right: 8px solid #ffffff;
+            animation: typing 1.5s steps(40, end), blink 1s step-end infinite;
+        }
+
+        .terminal-content {
+            display: none;
+        }
         
+        #main-menu {
+            display: block;
+        }
 
-<div class="pane pane--one" id="paneOne">
-  <div class="pane-inner centre">
-    <div class="align--center sideContent">
-  <div>
-    <img class="img--round" src="/assets/images/tom-alterman.jpg" alt="Tom Alterman" width="140" height="140">
-    <header class="header--home">
-      <h1 class="header--name">Tom Alterman</h1>
-      <p>
-        Product person / Advisor / Dad
-      </p>
-    </header>
-  </div>
-  <div>
-    <p>
-      I'm VP of Product & Design at <a href="http://www.structionsite.com" title="StructionSite">StructionSite</a>. I love building things for people who build things.
-    </p>
-  </div>
-  <div class="equal contacts">
-    <ul>
-      <li>
-        <a href="https://twitter.com/tomalterman"><i class="fa fa-twitter"><span>My Twitter profile</span></i></a>
-      </li>
-      <li>
-        <a href="http://uk.linkedin.com/in/tomalterman"><i class="fa fa-linkedin"><span>My Linkedin profile</span></i></a>
-      </li>
-      <li>
-        <a href="mailto:thomas.alterman+hello@gmail.com"><i class="fa fa-envelope"><span>Email me</span></i></a>
-      </li>
-    </ul>
-  </div>
-</div>
+        .terminal-line {
+            margin: 0;
+            line-height: 1.6;
+        }
 
-  </div>
-</div>
+        .back-command {
+            cursor: pointer;
+            color: #d4d4d4;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
 
-<div class="pane pane--two" id="paneTwo">
-  <div class="pane-inner pane-inner--main centre">
-    <ul class="buttonGroup--home">
-  <li>
-    <a href="pages/about-ux.html" class="button--home button--salmon">About</a>
-  </li>
-  <li>
-    <a href="pages/work-tr.html" class="button--home button--greeny">Work</a>
-  </li>
-  <li>
-    <a href="pages/talks-fel.html" class="button--home button--tan u-margin--none">Talks</a>
-  </li>
-</ul>
+        .back-command:hover {
+            color: #ffffff;
+        }
 
-  </div>
-</div>
+        .back-command::before {
+            content: "$ ";
+            color: #ffffff;
+        }
 
-      </div>
+        .video-container {
+            margin-top: 30px;
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 1px solid #404040;
+        }
+
+        .terminal-prompt {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .terminal-prompt::before {
+            content: "$ ";
+            color: #ffffff;
+            font-size: 24px;
+        }
+
+        .terminal-result {
+            margin-top: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .terminal-result.show {
+            opacity: 1;
+        }
+
+        .terminal-result a {
+            color: #ffffff;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .terminal-result a:hover {
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function typeText(element, text, speed = 50) {
+            for (let i = 0; i < text.length; i++) {
+                element.textContent += text[i];
+                await sleep(speed);
+            }
+        }
+
+        async function showMainMenu() {
+            const content = document.querySelector('.content');
+            content.innerHTML = mainContent;
+            attachEventListeners();
+        }
+
+        async function showCoaching() {
+            const content = document.querySelector('.content');
+            const mainContent = content.innerHTML;
+            window.mainContent = mainContent;  // Store for back command
+            content.innerHTML = `
+                <div class="terminal-content">
+                    <div class="back-command">back</div>
+                    <p class="terminal-prompt"></p>
+                    <div class="terminal-result">
+                        <p>I stumbled into product management. Felt lost. Asked stupid questions. Got lucky.</p>
+                        <p>Strangers became mentors. People I'd never meet in person took time to guide me. That's the Silicon Valley way – people help because they can. Because someone once helped them.</p>
+                        <p>Now it's my turn.</p>
+                        <p>I'm setting aside time each week for anyone looking to break into product management. New grads. Career changers. Anyone feeling stuck.</p>
+                        <p>Just <a href="mailto:thomas.alterman+hello@gmail.com">reach out</a> if you'd like to chat.</p>
+                        <p>This isn't a funnel into paid coaching. It's free. Always will be. Chat once or monthly – up to you. No question is too basic.</p>
+                        <p>Just people helping people. Like others did for me.</p>
+                        <p>Let's talk<span class="cursor"></span></p>
+                    </div>
+                </div>
+            `;
+
+            const terminalContent = document.querySelector('.terminal-content');
+            const prompt = document.querySelector('.terminal-prompt');
+            const result = document.querySelector('.terminal-result');
+
+            terminalContent.style.display = 'block';
+            await typeText(prompt, 'Coaching', 100);
+            await sleep(500);
+            result.classList.add('show');
+
+            // Add click handler for back command
+            const backCommand = document.querySelector('.back-command');
+            backCommand.addEventListener('click', showMainMenu);
+        }
+
+        function attachEventListeners() {
+            const speakingLink = document.querySelector('a[href="#speaking"]');
+            const coachingLink = document.querySelector('a[href="#coaching"]');
+            
+            speakingLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                showSpeaking();
+            });
+            
+            coachingLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                showCoaching();
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            attachEventListeners();
+        });
+
+        // Add speaking function back
+        async function showSpeaking() {
+            const content = document.querySelector('.content');
+            const mainContent = content.innerHTML;
+            window.mainContent = mainContent;  // Store for back command
+            content.innerHTML = `
+                <div class="terminal-content">
+                    <div class="back-command">back</div>
+                    <p class="terminal-prompt"></p>
+                    <div class="terminal-result">
+                        <p>I speak about building things fast in places where we can't fail. Healthcare. Construction. Growth-stage startups where tomorrow looks nothing like today.</p>
+                        <p>My talks draw from hands-on experience leading product teams and finding unconventional paths into product management.</p>
+                        <p>Recent engagements: <a href="https://webdirections.org/">Web Directions</a>, <a href="https://productschool.com/">Product School</a>, <a href="https://uxdx.com/">UXDX</a></p>
+                        <p><a href="mailto:thomas.alterman+hello@gmail.com">Reach out</a> for speaking inquiries<span class="cursor"></span></p>
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/KijptnCRlZY" 
+                                title="Tom Alterman Speaking"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            const terminalContent = document.querySelector('.terminal-content');
+            const prompt = document.querySelector('.terminal-prompt');
+            const result = document.querySelector('.terminal-result');
+
+            terminalContent.style.display = 'block';
+            await typeText(prompt, 'Speaking', 100);
+            await sleep(500);
+            result.classList.add('show');
+
+            // Add click handler for back command
+            const backCommand = document.querySelector('.back-command');
+            backCommand.addEventListener('click', showMainMenu);
+        }
+    </script>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="window-controls"></div>
+            <div class="title-bar-text">T0m.4lt3rm4n.PR0DUCT</div>
+        </div>
+        <div class="window-body">
+            <div class="content">
+                <!-- Main Menu -->
+                <div id="main-menu">
+                    <h1>Tom Alterman</h1>
+                    <div class="subtitle">Product Person</div>
+                    
+                    <nav class="menu">
+                        <a href="#speaking" class="menu-item">sometimes I speak</a>
+                        <a href="#coaching" class="menu-item">sometimes I coach</a>
+                        <a href="https://substack.com/@alterman" class="menu-item">sometimes I write</a>
+                    </nav>
+                </div>
+
+                <!-- Speaking Section -->
+                <div id="speaking-section" class="terminal-content">
+                    <div class="back-command">back</div>
+                    <p class="terminal-prompt"></p>
+                    <div class="terminal-result">
+                        <p>I speak about building things fast in places where we can't fail. Healthcare. Construction. Growth-stage startups where tomorrow looks nothing like today.</p>
+                        <p>My talks draw from hands-on experience leading product teams and finding unconventional paths into product management.</p>
+                        <p>Recent engagements: <a href="https://webdirections.org/">Web Directions</a>, <a href="https://productschool.com/">Product School</a>, <a href="https://uxdx.com/">UXDX</a></p>
+                        <p><a href="mailto:thomas.alterman+hello@gmail.com">Reach out</a> for speaking inquiries<span class="cursor"></span></p>
+                        <div class="video-container">
+                            <iframe 
+                                src="https://www.youtube.com/embed/KijptnCRlZY" 
+                                title="Tom Alterman Speaking"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coaching Section -->
+                <div id="coaching-section" class="terminal-content">
+                    <div class="back-command">back</div>
+                    <p class="terminal-prompt"></p>
+                    <div class="terminal-result">
+                        <p>I stumbled into product management. Felt lost. Asked stupid questions. Got lucky.</p>
+                        <p>Strangers became mentors. People I'd never meet in person took time to guide me. That's the Silicon Valley way – people help because they can. Because someone once helped them.</p>
+                        <p>Now it's my turn.</p>
+                        <p>I'm setting aside time each week for anyone looking to break into product management. New grads. Career changers. Anyone feeling stuck.</p>
+                        <p>Just <a href="mailto:thomas.alterman+hello@gmail.com">reach out</a> if you'd like to chat.</p>
+                        <p>This isn't a funnel into paid coaching. It's free. Always will be. Chat once or monthly – up to you. No question is too basic.</p>
+                        <p>Just people helping people. Like others did for me.</p>
+                        <p>Let's talk<span class="cursor"></span></p>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tomalterman/" class="social-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:thomas.alterman+hello@gmail.com" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>© 2024 Tom Alterman<span class="cursor"></span></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
 </html>

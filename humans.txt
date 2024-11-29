@@ -1,16 +1,25 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
+/* TEAM */
+Product Person: Tom Alterman
+Site: thomas.alterman+hello@gmail.com
+LinkedIn: https://www.linkedin.com/in/tomalterman/
+Location: Software is where you find me.
 
-    Tom Alterman -- <role> -- @https://twitter.com/tomalterman
+/* SITE */
+Last update: 2024/03/28
+Standards: HTML5, CSS3
+Components: Vanilla JavaScript
+Software: VSCode
+Language: English
+IDE: The terminal where good ideas come from
 
-# THANKS
+/* META */
+Built with: Coffee, curiosity, and a healthy dose of terminal aesthetics
+Inspired by: The golden age of MS-DOS and the blue screen of possibilities
+Thanks: To every mentor who showed me the way
+Future: Always under construction, just like good products
 
-    <name>
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3, JavaScript
-    Jekyll, Lanyon/Poole, HTML5 Boilerplate
-    Yeoman, Jekyllized
+/* PHILOSOPHY */
+"People help because they can. Because someone once helped them."

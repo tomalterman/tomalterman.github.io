@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Tom Alterman</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            display: block;
+            line-height: 1.2;
+            letter-spacing: 0;
+            margin: 0;
+            font-size: 8px;
+            color: #ffffff;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: #000080;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .window {
+            background: #0000aa;
+            border: none;
+            border-radius: 0;
+            width: 90%;
+            min-width: 375px;
+            max-width: 600px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .title-bar {
+            background: #aaaaaa;
+            color: #0000aa;
+            padding: 8px 12px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 6px;
+            margin-right: 12px;
+        }
+
+        .window-body {
+            padding: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .content {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            font-weight: normal;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            color: #d4d4d4;
+            display: flex;
+            margin-left: 4px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .subtitle::before,
+        .subtitle::after {
+            content: "---------";
+            color: #d4d4d4;
+        }
+
+        @media (min-width: 460px) {
+            .ascii-art { font-size: 10px; }
+            .subtitle { margin-left: 8px; }
+            .subtitle::before,
+            .subtitle::after { content: "------------"; }
+        }
+
+        @media (min-width: 525px) {
+            .ascii-art { font-size: 12px; margin-left: 4px; }
+            .subtitle::before,
+            .subtitle::after { content: "----------------"; }
+        }
+
+        @media (min-width: 590px) {
+            .ascii-art { font-size: 14px; margin-left: 0px; }
+            .subtitle { margin-left: 10px; }
+            .subtitle::before,
+            .subtitle::after { content: "-------------------"; }
+        }
+
+        @media (min-width: 666px) {
+            .ascii-art { font-size: 16px; margin-left: 8px; }
+            .subtitle {
+                margin-left: 0px;
+                justify-content: center;
+                align-items: center;
+            }
+            .subtitle::before,
+            .subtitle::after { content: "-----------------------"; }
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        .menu-item {
+            margin: 10px 0;
+            padding: 10px 8px;
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            transition: all 0.15s ease;
+            font-size: 14px;
+        }
+
+        .menu-item::before {
+            content: "> ";
+            color: #ffffff;
+            opacity: 1;
+            transition: opacity 0.15s ease;
+        }
+
+        .menu-item:hover {
+            color: #ffffff;
+            background: #00005a;
+            padding-left: 16px;
+        }
+
+        .menu-item:active {
+            background: #000040;
+        }
+
+        .game-title {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .game-desc {
+            display: block;
+            padding-left: 14px;
+            margin-top: 4px;
+            font-size: 12px;
+            color: #d4d4d4;
+        }
+
+        .menu-item:hover .game-desc {
+            color: #ffffff;
+        }
+
+        .back-command {
+            cursor: pointer;
+            color: #d4d4d4;
+            margin-bottom: 20px;
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-command:hover { color: #ffffff; }
+
+        .back-command::before {
+            content: "$ cd .. && ";
+            color: #ffffff;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #ffffff;
+            border-top: 1px solid #404040;
+            padding-top: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .social-link {
+            display: inline-block;
+            text-decoration: none;
+            color: #00ff00;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            stroke: #ffffff;
+        }
+
+        .social-link:hover .social-icon {
+            filter: invert(1);
+            transition: filter 0.15s ease;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background: #ffffff;
+            animation: blink 1s step-end infinite;
+            vertical-align: middle;
+            margin-left: 4px;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .window-body { padding: 15px; }
+            body { padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="window-controls"></div>
+            <div class="title-bar-text">T0m.4lt3rm4n.G4M3S</div>
+        </div>
+        <div class="window-body">
+            <div class="content">
+                <a href="/" class="back-command">home</a>
+
+                <h1 class="sr-only">Games</h1>
+                <pre class="ascii-art"> ██████╗  █████╗ ███╗   ███╗███████╗███████╗
+██╔════╝ ██╔══██╗████╗ ████║██╔════╝██╔════╝
+██║  ███╗███████║██╔████╔██║█████╗  ███████╗
+██║   ██║██╔══██║██║╚██╔╝██║██╔══╝  ╚════██║
+╚██████╔╝██║  ██║██║ ╚═╝ ██║███████╗███████║
+ ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝</pre>
+                <div class="subtitle" style="margin-top: 20px;">Built with my kids</div>
+
+                <nav class="menu">
+                    <a href="/ninja-sam/" class="menu-item">
+                        <span class="game-title">Ninja Sam</span>
+                        <span class="game-desc">Robot Runner &mdash; endless side-scroller built with Leo</span>
+                    </a>
+                    <a href="/space-fighter/" class="menu-item">
+                        <span class="game-title">Space Fighter</span>
+                        <span class="game-desc">Guard the Galaxy &mdash; arcade space shooter</span>
+                    </a>
+                    <a href="/tiny-kitty-garden/" class="menu-item">
+                        <span class="game-title">Tiny Kitty Garden</span>
+                        <span class="game-desc">Cozy tap-to-play garden for small hands</span>
+                    </a>
+                </nav>
+
+                <div class="footer">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/tomalterman/" class="social-link" target="_blank" rel="noopener">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect width="4" height="12" x="2" y="9"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:thomas.alterman+hello@gmail.com" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div>&copy; 2026 Tom Alterman<span class="cursor"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
